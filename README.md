@@ -11,7 +11,7 @@ This project shows how to make Linux look good with Hyprland and NixOS, using on
     <h1>Review</h1>
 </div>
 
-![This image did not load](./.github/asses/Screenshot/main.png)
+![This image did not load](./.github/assets/screenshot/main.png)
 
 ## Install
 
