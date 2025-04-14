@@ -48,9 +48,6 @@
     };
     stylix.url = "github:danth/stylix";
     systems.url = "github:nix-systems/default-linux";
-    ghostty = {
-      url = "github:ghostty-org/ghostty";
-    };
   };
 
   outputs =

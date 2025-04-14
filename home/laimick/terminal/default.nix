@@ -1,10 +1,11 @@
-{ inputs, pkgs, ... }: {
-  home.packages = [
-    pkgs.kitty
+{ pkgs, ... }:
+{
+  home.packages = with pkgs; [
+    ghostty
   ];
 
   imports = [
     ./fish
-    ./kitty
+    ./ghostty
   ];
 }

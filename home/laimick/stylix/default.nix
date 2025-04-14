@@ -12,7 +12,7 @@
   stylix = {
     enable = true;
     autoEnable = false;
-    image = ./wallpaper/test.jpg;
+    image = ./wallpaper/6.jpg;
     base16Scheme = "${self}/home/laimick/stylix/frappe.yaml";
 
     targets = {
