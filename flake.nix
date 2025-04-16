@@ -41,7 +41,7 @@
         systems.follows = "hyprland/systems";
       };
     };
-    ags.url = "github:aylur/ags/tree/v3";
+    ags.url = "github:aylur/ags";
     zen-browser = {
       url = "github:youwen5/zen-browser-flake";
       inputs.nixpkgs.follows = "nixpkgs";
@@ -70,7 +70,7 @@
             {
               home-manager.useGlobalPkgs = false;
               home-manager.useUserPackages = true;
-              home-manager.users.laimick = import ./home;
+              home-manager.users.laimick = import ./home/laimick;
               home-manager.extraSpecialArgs = {
                 inherit
                   inputs

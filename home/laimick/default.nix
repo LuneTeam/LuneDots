@@ -9,11 +9,6 @@
   nixpkgs.config.allowUnfree = true;
 
   imports = [
-    ./desktop
-    ./development
-    ./packages
-    ./stylix
-    ./terminal
-    ./wayland
+    ../../modules/home
   ];
 }
