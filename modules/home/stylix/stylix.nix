@@ -2,7 +2,7 @@
 {
   enable = true;
   autoEnable = false;
-  image = ./wallpaper/8.jpg;
+  image = ./wallpaper/abstractions/2.jpeg;
   base16Scheme = "${self}/modules/home/stylix/frappe.yaml";
 
   targets = {

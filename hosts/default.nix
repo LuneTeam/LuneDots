@@ -1,6 +1,6 @@
-{ ... }: {
-    imports = [
-      ./io
-      #./laptop
-    ];
+{ ... }:
+{
+  imports = [
+    ./io
+  ];
 }

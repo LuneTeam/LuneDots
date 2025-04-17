@@ -70,7 +70,7 @@
             {
               home-manager.useGlobalPkgs = false;
               home-manager.useUserPackages = true;
-              home-manager.users.laimick = import ./home/laimick;
+              home-manager.users.laimick = import ./home;
               home-manager.extraSpecialArgs = {
                 inherit
                   inputs
