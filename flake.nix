@@ -1,6 +1,17 @@
 {
   description = "My NixOS configuration";
 
+  outputs =
+    inputs@{ flake-parts, ... }:
+    flake-parts.lib.mkFlake { inherit inputs; } {
+      imports = [
+        ./hosts
+      ];
+      systems = [
+        "x86_64-linux"
+      ];
+    };
+
   inputs = {
     nixpkgs.url = "github:nixos/nixpkgs?ref=nixos-unstable";
     home-manager = {
@@ -49,40 +60,4 @@
     stylix.url = "github:danth/stylix";
     systems.url = "github:nix-systems/default-linux";
   };
-
-  outputs =
-    {
-      nixpkgs,
-      self,
-      home-manager,
-      ...
-    }@inputs:
-    let
-      system = "x86_64-linux";
-    in
-    {
-      nixosConfigurations = {
-        nixos = nixpkgs.lib.nixosSystem {
-          inherit system;
-          specialArgs = { inherit inputs; };
-          modules = [
-            home-manager.nixosModules.home-manager
-            {
-              home-manager.useGlobalPkgs = false;
-              home-manager.useUserPackages = true;
-              home-manager.users.laimick = import ./home;
-              home-manager.extraSpecialArgs = {
-                inherit
-                  inputs
-                  system
-                  self
-                  ;
-              };
-              home-manager.backupFileExtension = "backup";
-            }
-            ./hosts
-          ];
-        };
-      };
-    };
 }

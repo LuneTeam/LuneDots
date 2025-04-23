@@ -1,6 +1,6 @@
 { ... }:
 {
   imports = [
-    ./home/default.nix
+    ./media.nix
   ];
 }
