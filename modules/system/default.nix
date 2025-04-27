@@ -1,4 +1,5 @@
-{ ... }: {
+{ ... }:
+{
   imports = [
     ./fish
     ./hardware
@@ -9,6 +10,7 @@
     ./nix
     ./nvidia
     ./pipewire
+    ./services
     ./swap
     ./timeZone
     ./users

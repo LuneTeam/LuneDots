@@ -1,6 +1,6 @@
 { self, pkgs, ... }:
 let
-  theme = "${pkgs.base16-schemes}/share/themes/catppuccin-latte.yaml";
+  theme = "${self}/home-manager/home/stylix/oldworld.yaml";
 in
 {
   enable = true;

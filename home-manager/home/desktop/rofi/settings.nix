@@ -3,9 +3,9 @@
   xdg.configFile."rofi/theme.rasi".text = ''
     * {
       font:                        "JetBrains Mono Nerd Font 10";
-      background:                  #D0D0D0;
+      background:                  #161617;
       background-alt:              #E9E9E9;
-      foreground:                  #161616;
+      foreground:                  #C9C7CD;
       selected:                    #BEBEBE;
       active:                      #999999;
       urgent:                      #808080;

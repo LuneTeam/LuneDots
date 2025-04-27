@@ -14,50 +14,44 @@
 
   inputs = {
     nixpkgs.url = "github:nixos/nixpkgs?ref=nixos-unstable";
-    home-manager = {
-      url = "github:nix-community/home-manager";
-      inputs.nixpkgs.follows = "nixpkgs";
-    };
+    nur.url = "github:nix-community/NUR";
+    nur.inputs.nixpkgs.follows = "nixpkgs";
+    home-manager.url = "github:nix-community/home-manager";
+    home-manager.inputs.nixpkgs.follows = "nixpkgs";
+
     hyprland.url = "github:hyprwm/hyprland";
-    hypridle = {
-      url = "github:hyprwm/hypridle";
-      inputs = {
-        hyprlang.follows = "hyprland/hyprlang";
-        hyprutils.follows = "hyprland/hyprutils";
-        nixpkgs.follows = "hyprland/nixpkgs";
-        systems.follows = "hyprland/systems";
-      };
-    };
-    hyprland-contrib = {
-      url = "github:hyprwm/contrib";
-      inputs.nixpkgs.follows = "nixpkgs";
-    };
-    hyprlock = {
-      url = "github:hyprwm/hyprlock";
-      inputs = {
-        hyprgraphics.follows = "hyprland/hyprgraphics";
-        hyprlang.follows = "hyprland/hyprlang";
-        hyprutils.follows = "hyprland/hyprutils";
-        nixpkgs.follows = "hyprland/nixpkgs";
-        systems.follows = "hyprland/systems";
-      };
-    };
-    hyprpaper = {
-      url = "github:hyprwm/hyprpaper";
-      inputs = {
-        hyprgraphics.follows = "hyprland/hyprgraphics";
-        hyprlang.follows = "hyprland/hyprlang";
-        hyprutils.follows = "hyprland/hyprutils";
-        nixpkgs.follows = "hyprland/nixpkgs";
-        systems.follows = "hyprland/systems";
-      };
-    };
-    ags.url = "github:aylur/ags";
-    zen-browser = {
-      url = "github:youwen5/zen-browser-flake";
-      inputs.nixpkgs.follows = "nixpkgs";
-    };
+    hypridle.url = "github:hyprwm/hypridle";
+    hypridle.inputs.hyprlang.follows = "hyprland/hyprlang";
+    hypridle.inputs.hyprutils.follows = "hyprland/hyprutils";
+    hypridle.inputs.nixpkgs.follows = "hyprland/nixpkgs";
+    hypridle.inputs.systems.follows = "hyprland/systems";
+
+    hyprland-contrib.url = "github:hyprwm/contrib";
+    hyprland-contrib.inputs.nixpkgs.follows = "nixpkgs";
+
+    hyprlock.url = "github:hyprwm/hyprlock";
+    hyprlock.inputs.hyprgraphics.follows = "hyprland/hyprgraphics";
+    hyprlock.inputs.hyprlang.follows = "hyprland/hyprlang";
+    hyprlock.inputs.hyprutils.follows = "hyprland/hyprutils";
+    hyprlock.inputs.nixpkgs.follows = "hyprland/nixpkgs";
+    hyprlock.inputs.systems.follows = "hyprland/systems";
+
+    hyprpaper.url = "github:hyprwm/hyprpaper";
+    hyprpaper.inputs.hyprgraphics.follows = "hyprland/hyprgraphics";
+    hyprpaper.inputs.hyprlang.follows = "hyprland/hyprlang";
+    hyprpaper.inputs.hyprutils.follows = "hyprland/hyprutils";
+    hyprpaper.inputs.nixpkgs.follows = "hyprland/nixpkgs";
+    hyprpaper.inputs.systems.follows = "hyprland/systems";
+
+    ags.url = "github:aylur/ags/v3";
+    zen-browser.url = "github:0xc000022070/zen-browser-flake";
+    zen-browser.inputs.nixpkgs.follows = "nixpkgs";
+
+    pre-commit-hooks.url = "github:cachix/git-hooks.nix";
+    treefmt-nix.url = "github:numtide/treefmt-nix";
+    nix-index-database.url = "github:nix-community/nix-index-database";
+    nix-index-database.inputs.nixpkgs.follows = "nixpkgs";
     stylix.url = "github:danth/stylix";
-    systems.url = "github:nix-systems/default-linux";
+    # systems.url = "github:nix-systems/default-linux";
   };
 }

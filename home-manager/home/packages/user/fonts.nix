@@ -17,6 +17,5 @@
     cascadia-code
     dejavu_fonts
     noto-fonts
-
   ];
 }

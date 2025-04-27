@@ -1,18 +1,11 @@
-<div align="center">
-    <h1>HyprDots</h1>
-</div>
-
-This project shows how to make Linux look good with Hyprland and NixOS, using only Nix for a reproducible setup anyone can copy.
-
-> [!WARNING]
-> This repository is under development!
+![This image did not load](./.github/assets/screenshot/LuneDots.png)
 
 <div align="center">
     <h1>Review</h1>
     <h4></h4>
 </div>
 
-![This image did not load](./.github/assets/screenshot/main.png)
+![This image did not load](./.github/assets/screenshot/pictures.png)
 
 <div align="center">
     <h2>Overview</h2>
@@ -43,7 +36,7 @@ This project shows how to make Linux look good with Hyprland and NixOS, using on
    Run `disko` to partition and format the disk (this erases all data):
 
    ```bash
-   sudo nix run github:nix-community/disko -- --mode disko ./LuneDots/path/to/disko.nix --arg device '"/dev/nvme0n1"'
+   sudo nix run github:nix-community/disko -- --mode disko ./LuneDots/disko.nix --arg device '"/dev/nvme0n1"'
    ```
 
 4. **Generate hardware configuration**:
@@ -103,3 +96,9 @@ This project shows how to make Linux look good with Hyprland and NixOS, using on
     <h2> Thanks! </h2>
     <h4></h4>
 </div>
+
+* vaxry - For founding such a high-quality Wayland compositor
+* end-4 - For showing how beautiful Hyprland can be
+* fufexan - For providing excellent support for Nix in Hyprland
+* aylur - For creating AGS
+* mic92 - For showing how complex Nix configuration can be

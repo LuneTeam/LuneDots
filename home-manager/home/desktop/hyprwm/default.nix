@@ -1,6 +1,7 @@
 {
   inputs,
   pkgs,
+  systems,
   ...
 }:
 {
@@ -17,6 +18,6 @@
 
   services.hyprpaper = {
     enable = true;
-    package = inputs.hyprpaper.packages."x86_64-linux".hyprpaper;
+    package = inputs.hyprpaper.packages.${systems}.hyprpaper;
   };
 }
