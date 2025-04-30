@@ -1,12 +1,13 @@
-{ pkgs, ... }:
+{ pkgs, inputs, ... }:
 {
   imports = [
-    ./nvim
+    ./nixvim
     ./zeditor
+
+    inputs.nixvim.homeManagerModules.nixvim
   ];
 
   home.packages = with pkgs; [
-    neovim
     zed-editor
   ];
 }

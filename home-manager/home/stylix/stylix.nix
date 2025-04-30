@@ -1,15 +1,16 @@
-{ self, pkgs, ... }:
-let
-  theme = "${self}/home-manager/home/stylix/oldworld.yaml";
-in
+{ pkgs, self, ... }:
 {
   enable = true;
   autoEnable = false;
-  image = ./wallpaper/abstractions/1.jpeg;
-  base16Scheme = theme;
+
+  image = ./wallpaper/anime/1.jpg;
+
+  base16Scheme = "${self}/home-manager/home/stylix/oldworld.yaml";
 
   targets = {
     hyprpaper.enable = true;
+    gtk.enable = false;
+    qt.enable = false;
   };
 
   cursor = {
