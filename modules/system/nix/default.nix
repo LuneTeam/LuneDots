@@ -2,6 +2,8 @@
 {
   nixpkgs.config.allowUnfree = true;
 
+  nix.settings.download-buffer-size = 524288000;
+
   nix.settings = {
     substituters = [
       "https://cache.nixos.org?priority=10"

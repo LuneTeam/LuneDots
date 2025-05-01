@@ -71,7 +71,6 @@
       spacing:                     10px;
       padding:                     15px;
       border-radius:               10px;
-      background-color:            @background-alt;
       text-color:                  @foreground;
       children:                    [ "textbox-prompt-colon", "entry" ];
     }
@@ -103,13 +102,11 @@
     button {
       padding:                     15px;
       border-radius:               10px;
-      background-color:            @background-alt;
       text-color:                  inherit;
       cursor:                      pointer;
     }
 
     button selected {
-      background-color:            @selected;
       text-color:                  @foreground;
     }
 

@@ -4,9 +4,8 @@
     enable = true;
     settings = {
       main = {
-        font = "Cascadia Code:size=12";
+        font = "Cascadia Code:size=13";
         term = "foot";
-        dpi-aware = "auto";
         pad = "0x0";
       };
       bell = {
@@ -20,7 +19,6 @@
         lines = 5000;
       };
       cursor = {
-        color = "ffffff";
         blink = true;
       };
       colors = {

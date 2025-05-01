@@ -10,7 +10,6 @@
     qt6Packages.qt6ct
     libsForQt5.qtstyleplugin-kvantum
     libsForQt5.qt5ct
-    papirus-icon-theme
     catppuccin-gtk
   ];
 
@@ -30,10 +29,6 @@
         accents = [ "lavender" ];
         tweaks = [ "rimless" ];
       };
-    };
-    iconTheme = {
-      name = "Papirus-Dark";
-      package = pkgs.papirus-icon-theme.override { color = "black"; };
     };
     gtk3.extraConfig = {
       gtk-application-prefer-dark-theme = true;
