@@ -29,6 +29,9 @@
     hyprland-contrib.url = "github:hyprwm/contrib";
     hyprland-contrib.inputs.nixpkgs.follows = "nixpkgs";
 
+    hyprpicker.url = "github:hyprwm/hyprpicker";
+    hyprpicker.inputs.nixpkgs.follows = "hyprland/nixpkgs";
+
     hyprlock.url = "github:hyprwm/hyprlock";
     hyprlock.inputs.hyprgraphics.follows = "hyprland/hyprgraphics";
     hyprlock.inputs.hyprlang.follows = "hyprland/hyprlang";
@@ -44,6 +47,9 @@
     hyprpaper.inputs.systems.follows = "hyprland/systems";
 
     ags.url = "github:aylur/ags/v3";
+    astral.url = "github:aylur/astal";
+    astral.inputs.nixpkgs.follows = "nixpkgs";
+
     zen-browser.url = "github:0xc000022070/zen-browser-flake";
     zen-browser.inputs.nixpkgs.follows = "nixpkgs";
 

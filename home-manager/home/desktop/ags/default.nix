@@ -1,4 +1,9 @@
-{ inputs, pkgs, ... }:
+{
+  inputs,
+  pkgs,
+  systems,
+  ...
+}:
 {
   imports = [
     inputs.ags.homeManagerModules.default
@@ -14,4 +19,7 @@
     ];
 
   };
+  home.packages = [
+    inputs.astal.packages.${systems}.default
+  ];
 }

@@ -3,7 +3,7 @@
   enable = true;
   autoEnable = false;
 
-  image = ./wallpaper/anime/1.jpg;
+  image = ./wallpaper/other/1.jpg;
 
   base16Scheme = "${self}/home-manager/home/stylix/oldworld.yaml";
 

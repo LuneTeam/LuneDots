@@ -8,7 +8,8 @@
   imports = [
     ./hyprcontrib
     ./hyprland
-    ./hyprlock
+    # ./hyprlock #TODOOO
+    ./hyprpicker
   ];
 
   wayland.windowManager.hyprland = {

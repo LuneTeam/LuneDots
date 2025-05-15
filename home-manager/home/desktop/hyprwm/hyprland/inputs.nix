@@ -11,8 +11,7 @@
     };
     cursor = {
       no_hardware_cursors = 2;
-      no_break_fs_vrr = 2;
-      min_refresh_rate = 24;
+      no_break_fs_vrr = 0;
       enable_hyprcursor = true;
       hide_on_touch = false;
     };

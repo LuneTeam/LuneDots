@@ -1,14 +1,14 @@
 ![This image did not load](./.github/assets/screenshot/LuneDots.png)
 
 <div align="center">
-    <h1>Review</h1>
+    <h1>Screenshots</h1>
     <h4></h4>
 </div>
 
 ![This image did not load](./.github/assets/screenshot/pictures.png)
 
 <div align="center">
-    <h2>Overview</h2>
+    <h2>Description</h2>
     <h4></h4>
 </div>
 
