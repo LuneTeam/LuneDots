@@ -2,7 +2,7 @@
 {
   xdg.configFile."rofi/theme.rasi".text = ''
     * {
-      font:                        "JetBrains Mono Nerd Font 10";
+      font:                        "FiraCode Nerd Font 12";
       background:                  #161617;
       background-alt:              #E9E9E9;
       foreground:                  #C9C7CD;
@@ -49,7 +49,7 @@
     imagebox {
       padding:                     20px;
       background-color:            transparent;
-      background-image:            url("/home/laimick/LuneDots/modules/home/stylix/wallpaper/abstractions/2.jpeg", height); /* change */
+      background-image:            url("/home/laimick/LuneDots/home-manager/home/stylix/wallpaper/anime/4.jpg", height);
       orientation:                 vertical;
       children:                    [ "inputbar", "dummy", "mode-switcher" ];
     }

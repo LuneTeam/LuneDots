@@ -1,30 +1,44 @@
-import { App, Astal, Gtk, Gdk } from "astal/gtk3";
-import { Variable } from "astal";
+import app from "ags/gtk4/app"
+import { Astal, Gtk, Gdk } from "ags/gtk4"
+import { execAsync } from "ags/process"
+import { Poll } from "ags/state"
 
-const time = Variable("").poll(1000, "date");
+const time = new Poll("", 1000, "date")
 
 export default function Bar(gdkmonitor: Gdk.Monitor) {
-  return (
-    <window
-      className="Bar"
-      gdkmonitor={gdkmonitor}
-      exclusivity={Astal.Exclusivity.EXCLUSIVE}
-      anchor={
-        Astal.WindowAnchor.BOTTOM |
-        Astal.WindowAnchor.LEFT |
-        Astal.WindowAnchor.RIGHT
-      }
-      application={App}
-    >
-      <centerbox>
-        <button onClicked="echo hello" halign={Gtk.Align.CENTER}>
-          Welcome to AGS!
-        </button>
-        <box />
-        <button onClick={() => print("hello")} halign={Gtk.Align.CENTER}>
-          <label label={time()} />
-        </button>
-      </centerbox>
-    </window>
-  );
+    const { TOP, LEFT, RIGHT } = Astal.WindowAnchor
+
+    return (
+        <window
+            visible
+            name="bar"
+            class="Bar"
+            gdkmonitor={gdkmonitor}
+            exclusivity={Astal.Exclusivity.EXCLUSIVE}
+            anchor={TOP | LEFT | RIGHT}
+            application={app}
+        >
+            <centerbox cssName="centerbox">
+                <button
+                    _type="start"
+                    $clicked={() => execAsync("echo hello")}
+                    hexpand
+                    halign={Gtk.Align.CENTER}
+                >
+                    <label label="Welcome to AGS!" />
+                </button>
+                <box _type="center" />
+                <menubutton
+                    _type="end"
+                    hexpand
+                    halign={Gtk.Align.CENTER}
+                >
+                    <label label={time()} />
+                    <popover>
+                        <Gtk.Calendar />
+                    </popover>
+                </menubutton>
+            </centerbox>
+        </window>
+    )
 }

@@ -23,9 +23,9 @@
       };
       colors = {
         alpha = 1;
-        background = "161617";
+        background = "101012";
         foreground = "C9C7CD";
-        selection-foreground = "161617";
+        selection-foreground = "101012";
         selection-background = "C9C7CD";
       };
     };

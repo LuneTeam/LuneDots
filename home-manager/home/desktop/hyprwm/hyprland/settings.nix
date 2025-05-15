@@ -1,13 +1,16 @@
 { ... }:
 {
   wayland.windowManager.hyprland.settings = {
+
+    exec-once = [ "ags run" ];
     monitor = "DP-1,2560x1440@170,0x0,1";
     misc = {
       disable_hyprland_logo = true;
       disable_splash_rendering = true;
       force_default_wallpaper = 0;
-      vrr = 2;
+      vrr = 0;
       middle_click_paste = false;
+      enable_anr_dialog = false;
     };
     animations = {
       enabled = true;

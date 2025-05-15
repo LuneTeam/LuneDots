@@ -2,7 +2,10 @@
 {
   home.packages = with pkgs; [
     photoqt
-    mpv
     nautilus
+    telegram-desktop
+    showtime
+
+    lact
   ];
 }

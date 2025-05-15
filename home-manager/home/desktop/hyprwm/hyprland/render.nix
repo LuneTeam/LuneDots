@@ -2,9 +2,8 @@
 {
   wayland.windowManager.hyprland.settings = {
     render = {
-      explicit_sync = 2;
-      explicit_sync_kms = 2;
-      expand_undersized_textures = true;
+      explicit_sync = 1;
+      explicit_sync_kms = 1;
     };
     opengl = {
       nvidia_anti_flicker = true;
