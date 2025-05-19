@@ -1,4 +1,4 @@
-name: Check Nix-code forman
+name: Nix Build and Check
 
 on:
   pull_request:
@@ -6,7 +6,7 @@ on:
       - main
 
 jobs:
-  tests:
+  build:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
