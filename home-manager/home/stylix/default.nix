@@ -7,7 +7,7 @@
 {
   imports = [
     ./qt.nix
-    inputs.stylix.homeManagerModules.stylix
+    inputs.stylix.homeModules.stylix
   ];
 
   stylix = import ./stylix.nix { inherit pkgs self; };

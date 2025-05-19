@@ -47,11 +47,12 @@
     hyprpaper.inputs.systems.follows = "hyprland/systems";
 
     ags.url = "github:aylur/ags/v3";
-    astral.url = "github:aylur/astal";
-    astral.inputs.nixpkgs.follows = "nixpkgs";
+    astal.url = "github:aylur/astal";
+    astal.inputs.nixpkgs.follows = "nixpkgs";
 
     zen-browser.url = "github:0xc000022070/zen-browser-flake";
     zen-browser.inputs.nixpkgs.follows = "nixpkgs";
+    zen-nebula.url = "github:JustAdumbPrsn/Nebula-A-Minimal-Theme-for-Zen-Browser";
 
     nixvim.url = "github:nix-community/nixvim";
     nixvim.inputs.nixpkgs.follows = "nixpkgs";
@@ -60,7 +61,7 @@
     treefmt-nix.url = "github:numtide/treefmt-nix";
     nix-index-database.url = "github:nix-community/nix-index-database";
     nix-index-database.inputs.nixpkgs.follows = "nixpkgs";
-    stylix.url = "github:danth/stylix";
+    stylix.url = "github:nix-community/stylix";
     flake-parts.url = "github:hercules-ci/flake-parts";
   };
 }

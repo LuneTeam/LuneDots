@@ -82,7 +82,7 @@
   [github.com/hyprwm/hyprlock](https://github.com/hyprwm/hyprlock)
 - **Hyprcontrib**: grimblast - A Hyprland version of Grimshot.
   [github.com/hyprwm/contrib](https://github.com/hyprwm/contrib)
-- **Agsv2**: CLI for Astal+TypeScript frameworks.
+- **Agsv3**: CLI for Astal+TypeScript frameworks.
   [github.com/Aylur/ags/tree/v3](https://github.com/Aylur/ags/tree/v3)
 - **Ghostty**: Fast, modern terminal emulator.
   [github.com/ghostty-org/ghostty](https://github.com/ghostty-org/ghostty)

@@ -2,11 +2,10 @@
 {
   programs.fish = {
     enable = true;
+    interactiveShellInit = ''
+      set fish_greeting # Disable greeting
+    '';
     plugins = with pkgs.fishPlugins; [
-      {
-        name = "fzf-fish";
-        src = fzf-fish.src;
-      }
       {
         name = "forgit";
         src = forgit.src;
