@@ -17,8 +17,8 @@ jobs:
             experimental-features = nix-command flakes
       - name: Install fd
         run: nix profile install nixpkgs#fd
-      - name: Install nixfmt
-        run: nix-env -iA nixos.nixfmt-rfc-style
+      - name: Install nixfmt-rfc-style
+        run: nix profile install nixpkgs#nixfmt-rfc-style
       - name: Check Nix format with nixfmt
         run: |
           set -euo pipefail

@@ -15,5 +15,5 @@ jobs:
           nix_version: latest
           extra_nix_config: |
             experimental-features = nix-command flakes
-      - name: Nixos rebuild configurations
-        run: nixos-rebuild --flake .#nixos
+      - name: Build NixOS configuration
+        run: nix build .#nixosConfigurations.nixos.config.system.build.toplevel
