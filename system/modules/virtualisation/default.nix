@@ -10,4 +10,10 @@
       defaultNetwork.settings.dns_enabled = true;
     };
   };
+
+  # qemu
+  programs.virt-manager.enable = true;
+  users.groups.libvirtd.members = [ "laimick" ];
+  virtualisation.libvirtd.enable = true;
+  virtualisation.spiceUSBRedirection.enable = true;
 }

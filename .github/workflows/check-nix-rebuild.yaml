@@ -1,12 +1,12 @@
-name: Check Nix Format
+name: Check Nix Rebuild
 
 on:
-  pull_request:
+  push:
     branches:
       - main
 
 jobs:
-  format:
+  check:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
@@ -15,9 +15,5 @@ jobs:
           nix_version: latest
           extra_nix_config: |
             experimental-features = nix-command flakes
-      - name: Install fd
-        run: nix profile install nixpkgs#fd
-      - name: Check Nix format with nixfmt
-        run: |
-          set -euo pipefail
-          fd --extension nix --exec nixfmt --check {}
+      - name: Nixos rebuild configurations
+        run: nixos-rebuild --flake .#nixos

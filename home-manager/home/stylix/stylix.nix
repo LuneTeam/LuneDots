@@ -5,7 +5,7 @@
 
   image = ./wallpaper/other/1.jpg;
 
-  base16Scheme = "${self}/home-manager/home/stylix/oldworld.yaml";
+  base16Scheme = "${self}/home-manager/home/stylix/simple.yaml";
 
   targets = {
     hyprpaper.enable = true;
@@ -14,8 +14,10 @@
   };
 
   cursor = {
-    name = "Bibata-Modern-Ice";
+    name = "Bibata-Modern-Classic";
     package = pkgs.bibata-cursors;
     size = 22;
   };
+
+  enableReleaseChecks = false;
 }

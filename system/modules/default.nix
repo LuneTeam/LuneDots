@@ -1,6 +1,7 @@
 { ... }:
 {
   imports = [
+    ./document
     ./fish
     ./hardware
     ./hyprland
@@ -10,6 +11,7 @@
     ./nix
     ./nvidia
     ./pipewire
+    ./programs
     ./services
     ./swap
     ./timeZone

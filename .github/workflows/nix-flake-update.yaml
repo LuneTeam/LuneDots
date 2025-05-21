@@ -1,0 +1,39 @@
+name: Update Nix Flake
+
+on:
+  schedule:
+    - cron: "0 0 * * 1" # sec / hours / days / month / day of the week
+  workflow_dispatch:
+
+jobs:
+  update-flake:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: cachix/install-nix-action@v31
+        with:
+          nix_version: latest
+          extra_nix_config: |
+            experimental-features = nix-command flakes
+
+      - name: Update flake.lock
+        run: nix flake update
+
+      - name: Check for changes
+        id: git-diff
+        run: |
+          git diff --exit-code flake.lock || echo "changes=true" >> $GITHUB_OUTPUT
+
+      - name: Create Pull Request
+        if: steps.git-diff.outputs.changes == 'true'
+        uses: peter-evans/create-pull-request@v7
+        with:
+          commit-message: "flake: update flake.lock"
+          branch: updateFlakeLock
+          delete-branch: true
+          title: "Update flake.lock"
+          body: |
+            Automatically update flake.lock using GitHub Actions.
+            Wait for the build result and you can merge!
+          labels: dependencies, automated
+          token: ${{ secrets.GITHUB_TOKEN }}

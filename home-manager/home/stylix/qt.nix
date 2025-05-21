@@ -8,9 +8,7 @@
   home.packages = with pkgs; [
     qt6Packages.qtstyleplugin-kvantum
     qt6Packages.qt6ct
-    libsForQt5.qtstyleplugin-kvantum
-    libsForQt5.qt5ct
-    catppuccin-gtk
+    gtk4
   ];
 
   fonts.fontconfig.enable = true;
@@ -29,9 +27,6 @@
         accents = [ "lavender" ];
         tweaks = [ "rimless" ];
       };
-    };
-    gtk3.extraConfig = {
-      gtk-application-prefer-dark-theme = true;
     };
     gtk4.extraConfig = {
       gtk-application-prefer-dark-theme = true;

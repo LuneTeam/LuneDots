@@ -3,7 +3,7 @@
   imports = [
     ./core
     ./development
-    ./game
+    ./games
     ./graphical
     ./terminal
     ./user

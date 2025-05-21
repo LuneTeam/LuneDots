@@ -4,7 +4,7 @@
     enable = true;
     settings = {
       main = {
-        font = "Cascadia Code:size=13";
+        font = "FiraCode Nerd Font:size=13";
         term = "foot";
         pad = "0x0";
       };
@@ -16,7 +16,7 @@
         command = "notify-send {title} {body}";
       };
       scrollback = {
-        lines = 5000;
+        lines = 1000;
       };
       cursor = {
         blink = true;
