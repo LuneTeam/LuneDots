@@ -21,4 +21,8 @@
     enable = true;
     package = inputs.hyprpaper.packages.${systems}.hyprpaper;
   };
+
+  home.packages = with pkgs; [
+    hyprland-qt-support
+  ];
 }

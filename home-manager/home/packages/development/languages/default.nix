@@ -10,6 +10,7 @@
     ./node.nix
     ./podman.nix
     ./postgresql.nix
+    ./qt.nix
     ./simple.nix
     ./sqlite.nix
     ./terraform.nix

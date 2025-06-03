@@ -4,6 +4,6 @@
 
   zen-nebula = {
     enable = true;
-    profile = "LuneDeveloper";
+    profile = "laimick";
   };
 }

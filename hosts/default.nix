@@ -10,12 +10,12 @@ in
 {
   flake.nixosConfigurations = {
     nixos = inputs.nixpkgs.lib.nixosSystem {
-      system = "x86_64-linux";
-      specialArgs = { inherit inputs self; };
+      system = systems;
+      specialArgs = { inherit inputs self systems; };
 
       modules = [
         ./io
-
+        ../packages
         inputs.home-manager.nixosModules.home-manager
         inputs.nix-index-database.nixosModules.nix-index
         {

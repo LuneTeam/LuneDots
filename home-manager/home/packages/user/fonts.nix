@@ -9,6 +9,7 @@
     nerd-fonts.hack
     nerd-fonts.dejavu-sans-mono
     nerd-fonts.space-mono
+    nerd-fonts.iosevka
     twemoji-color-font
     noto-fonts-emoji
     fantasque-sans-mono

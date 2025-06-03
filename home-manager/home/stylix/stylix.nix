@@ -3,7 +3,7 @@
   enable = true;
   autoEnable = false;
 
-  image = ./wallpaper/other/1.jpg;
+  image = ./wallpaper/anime/4.png;
 
   base16Scheme = "${self}/home-manager/home/stylix/simple.yaml";
 
@@ -18,6 +18,4 @@
     package = pkgs.bibata-cursors;
     size = 22;
   };
-
-  enableReleaseChecks = false;
 }
