@@ -11,5 +11,6 @@
     kdePackages.full
     kdePackages.qt6ct
     kdePackages.qtwayland
+    kdePackages.kirigami
   ];
 }

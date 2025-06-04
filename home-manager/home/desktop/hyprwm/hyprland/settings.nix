@@ -1,8 +1,9 @@
 { ... }:
 {
   wayland.windowManager.hyprland.settings = {
-    exec-once = [ "ags run" ];
-    # exec-once = uwsm app -t service quickshell -- --log-rules 'quickshell.dbus.properties.warning = false' # TODO uwsm
+    exec-once = [
+      # "qs &"
+    ];
     monitor = "DP-1,2560x1440@170,0x0,1";
     misc = {
       disable_hyprland_logo = true;

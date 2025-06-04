@@ -5,6 +5,7 @@
     nautilus
     telegram-desktop
     showtime
+    neohtop
 
     lact
   ];

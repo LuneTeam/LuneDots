@@ -6,7 +6,6 @@
     flake-parts.lib.mkFlake { inherit inputs; } {
       imports = [
         ./hosts
-        inputs.devshell.flakeModule
       ];
       systems = [
         "x86_64-linux"
@@ -15,8 +14,6 @@
 
   inputs = {
     nixpkgs.url = "github:nixos/nixpkgs?ref=nixos-unstable";
-    nur.url = "github:nix-community/NUR";
-    nur.inputs.nixpkgs.follows = "nixpkgs";
     home-manager.url = "github:nix-community/home-manager";
     home-manager.inputs.nixpkgs.follows = "nixpkgs";
 
@@ -47,7 +44,7 @@
     hyprpaper.inputs.nixpkgs.follows = "hyprland/nixpkgs";
     hyprpaper.inputs.systems.follows = "hyprland/systems";
 
-    quickshell.url = "github:quickshell-mirror/quickshell";
+    quickshell.url = "git+https://git.outfoxxed.me/outfoxxed/quickshell";
     quickshell.inputs.nixpkgs.follows = "nixpkgs";
 
     zen-browser.url = "github:0xc000022070/zen-browser-flake";
@@ -60,12 +57,14 @@
     aagl.url = "github:ezKEa/aagl-gtk-on-nix";
     aagl.inputs.nixpkgs.follows = "nixpkgs";
 
+    vermilion.url = "github:vaxerski/Vermilion";
+    vermilion.inputs.nixpkgs.follows = "nixpkgs";
+
     pre-commit-hooks.url = "github:cachix/git-hooks.nix";
     treefmt-nix.url = "github:numtide/treefmt-nix";
     nix-index-database.url = "github:nix-community/nix-index-database";
     nix-index-database.inputs.nixpkgs.follows = "nixpkgs";
     stylix.url = "github:nix-community/stylix";
     flake-parts.url = "github:hercules-ci/flake-parts";
-    devshell.url = "github:numtide/devshell";
   };
 }

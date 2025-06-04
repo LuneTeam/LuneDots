@@ -2,7 +2,7 @@
 {
   imports = [
     ./hyprwm
+    ./quickshell
     ./rofi
-    ./zen
   ];
 }

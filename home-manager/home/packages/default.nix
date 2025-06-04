@@ -1,6 +1,7 @@
 { ... }:
 {
   imports = [
+    ./build
     ./core
     ./development
     ./games

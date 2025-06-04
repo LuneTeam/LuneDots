@@ -11,7 +11,13 @@ in
   flake.nixosConfigurations = {
     nixos = inputs.nixpkgs.lib.nixosSystem {
       system = systems;
-      specialArgs = { inherit inputs self systems; };
+      specialArgs = {
+        inherit
+          inputs
+          self
+          systems
+          ;
+      };
 
       modules = [
         ./io
@@ -31,7 +37,13 @@ in
                   systems
                   ;
               });
-            extraSpecialArgs = { inherit inputs self systems; };
+            extraSpecialArgs = {
+              inherit
+                inputs
+                self
+                systems
+                ;
+            };
             backupFileExtension = ".hm-backup";
           };
         }
