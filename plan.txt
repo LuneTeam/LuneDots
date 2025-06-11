@@ -1,0 +1,20 @@
+quickshell
+fastfetch - красивый фетч
+секундомер (hyprland-dots end-4)
+terminal приколюхи
+nixvim, то есть полный отказ от zed-editor
+nautilus настроить
+hyprlock чтоб сам закрывался
+uwsm - полезные настройки для wayland
+hyprland - plugins
+zen-browser - настроить декларативно
+stylix -> настройка color.yaml
+rofi настроить
+flake-parts переработать с modules/systems
+чёрный курсор с белыми краями
+мониторинги
+добавить потом к quckshell vpn и grok-3.5 когда выйдет / deepseek / grok
+добить gha чтоб он начислял необходимые метки
+https://mergiraf.org/adding-a-language.html
+zapret https://github.com/bol-van/zapret
+eval test github actions
