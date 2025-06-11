@@ -10,10 +10,11 @@ in
 {
   home.packages = [ quickshell ];
 
-  home.file.".config/quickshell" = {
-    source = ./config;
-    recursive = true;
-  };
+  # TODO
+  # home.file.".config/quickshell" = {
+  #   source = ./config;
+  #   recursive = true;
+  # };
 
   home.sessionVariables.QML2_IMPORT_PATH = lib.concatStringsSep ":" [
     "${quickshell}/lib/qt-6/qml"
