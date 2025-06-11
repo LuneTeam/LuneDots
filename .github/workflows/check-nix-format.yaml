@@ -19,14 +19,13 @@ jobs:
 
       - name: Install dependencies
         run: |
-          nix profile install nixpkgs#fd
           nix profile install nixpkgs#nixfmt-rfc-style
 
       - name: Check Nix formatting
         run: |
           set -euo pipefail
 
-          fd . -name "*.nix" | while read file; do
+          find . -name "*.nix" | while read file; do
             echo "Tests $file"
             if ! nixfmt --check "$file"; then
               echo "❌ ERROR $file"
