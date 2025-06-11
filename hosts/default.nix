@@ -4,8 +4,9 @@
   ...
 }:
 let
-  homeImports = "${self}/home-manager/profiles/laimick";
+  homeImports = "${self}/home-manager/profiles/${user}";
   systems = "x86_64-linux";
+  user = "laimick";
 in
 {
   flake.nixosConfigurations = {
@@ -16,17 +17,18 @@ in
           inputs
           self
           systems
+          user
           ;
       };
 
       modules = [
         ./io
-        ../packages
+        # ../packages TODO
         inputs.home-manager.nixosModules.home-manager
         inputs.nix-index-database.nixosModules.nix-index
         {
           home-manager = {
-            users.laimick =
+            users.${user} =
               { config, pkgs, ... }:
               (import homeImports {
                 inherit
@@ -35,6 +37,7 @@ in
                   self
                   inputs
                   systems
+                  user
                   ;
               });
             extraSpecialArgs = {
@@ -42,6 +45,7 @@ in
                 inputs
                 self
                 systems
+                user
                 ;
             };
             backupFileExtension = ".hm-backup";

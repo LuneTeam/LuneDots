@@ -1,4 +1,4 @@
-{ ... }:
+{ self, ... }:
 {
   xdg.configFile."rofi/theme.rasi".text = ''
     * {
@@ -49,7 +49,7 @@
     imagebox {
       padding:                     20px;
       background-color:            transparent;
-      background-image:            url("/home/laimick/LuneDots/home-manager/home/stylix/wallpaper/anime/4.jpg", height);
+      background-image:            url("${self}/home-manager/home/stylix/wallpaper/anime/4.jpg", height);
       orientation:                 vertical;
       children:                    [ "inputbar", "dummy", "mode-switcher" ];
     }

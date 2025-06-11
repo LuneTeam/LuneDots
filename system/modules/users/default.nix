@@ -1,12 +1,11 @@
-{ pkgs, ... }:
+{ user, ... }:
 {
-  users.users.laimick = {
+  users.users.${user} = {
     isNormalUser = true;
-    description = "laimick";
+    description = "${user}";
     extraGroups = [
       "networkmanager"
       "wheel"
     ];
-    packages = with pkgs; [ ];
   };
 }
