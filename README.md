@@ -58,7 +58,7 @@
    Install the system to `/mnt` using the flake:
 
    ```bash
-   nixos-install --root /mnt --flake ./LuneDots#io
+   nixos-install --root /mnt --flake ./LuneDots
    ```
 
    Set a root password with `passwd` or configure SSH keys if prompted.
@@ -82,10 +82,10 @@
   [github.com/hyprwm/hyprlock](https://github.com/hyprwm/hyprlock)
 - **Hyprcontrib**: grimblast - A Hyprland version of Grimshot.
   [github.com/hyprwm/contrib](https://github.com/hyprwm/contrib)
-- **Agsv3**: CLI for Astal+TypeScript frameworks.
-  [github.com/Aylur/ags/tree/v3](https://github.com/Aylur/ags/tree/v3)
-- **Ghostty**: Fast, modern terminal emulator.
-  [github.com/ghostty-org/ghostty](https://github.com/ghostty-org/ghostty)
+- **Quickshell**: Universal bar for C++ and Qt6.
+  [github.com/quickshell-mirror/quickshell](https://github.com/quickshell-mirror/quickshell)
+- **Foot**: Fast wayland terminal with xterm support.
+  [codeberg.org/dnkl/foot](https://codeberg.org/dnkl/foot)
 - **Zen-Browser**: Firefox fork for a nicer browsing experience.
   [github.com/zen-browser/desktop](https://github.com/zen-browser/desktop)
 - **Zed-editor**: Fast Rust-based IDE with cool features.
