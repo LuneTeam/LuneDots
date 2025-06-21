@@ -1,4 +1,4 @@
-name: Check Nix Format
+name: Nix Format Check
 
 on:
   pull_request:
@@ -26,7 +26,7 @@ jobs:
           set -euo pipefail
 
           find . -name "*.nix" | while read file; do
-            echo "Tests $file"
+            echo "Test $file"
             if ! nixfmt --check "$file"; then
               echo "❌ ERROR $file"
               echo "::error file=$file::run nixfmt pls!!!"

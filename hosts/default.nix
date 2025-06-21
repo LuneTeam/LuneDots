@@ -6,7 +6,7 @@
 let
   homeImports = "${self}/home-manager/profiles/${user}";
   systems = "x86_64-linux";
-  user = "laimick";
+  user = "laimick"; # Change pls
 in
 {
   flake.nixosConfigurations = {
@@ -23,7 +23,7 @@ in
 
       modules = [
         ./io
-        # ../packages TODO
+        ../packages
         inputs.home-manager.nixosModules.home-manager
         inputs.nix-index-database.nixosModules.nix-index
         {
