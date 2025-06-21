@@ -50,7 +50,6 @@
    Copy the generated file to your host directory:
 
    ```bash
-   mkdir -p ./LuneDots/hosts/io
    cp ./etc/nixos/hardware-configuration.nix ./LuneDots/hosts/io/
    ```
 
@@ -100,5 +99,5 @@
 * vaxry - For founding such a high-quality Wayland compositor
 * end-4 - For showing how beautiful Hyprland can be
 * fufexan - For providing excellent support for Nix in Hyprland
-* aylur - For creating AGS
 * mic92 - For showing how complex Nix configuration can be
+* outfoxxed - For creating quickshell
