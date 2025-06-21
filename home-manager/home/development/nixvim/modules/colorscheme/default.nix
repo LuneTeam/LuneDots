@@ -1,0 +1,5 @@
+{ ... }: {
+  imports = [
+    ./poimandres.nix
+  ];
+}
