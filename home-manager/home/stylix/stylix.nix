@@ -3,7 +3,7 @@
   enable = true;
   autoEnable = false;
 
-  image = ./wallpaper/other/2.jpg;
+  image = ./wallpaper/other/3.jpg;
 
   base16Scheme = "${self}/home-manager/home/stylix/simple.yaml";
 
