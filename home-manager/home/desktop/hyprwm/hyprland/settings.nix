@@ -4,6 +4,11 @@
     exec-once = [
       # "qs &"
     ];
+
+    env = [
+      "GRIMBLAST_NO_CURSOR,0"
+    ];
+
     monitor = "DP-1,2560x1440@170,0x0,1";
     misc = {
       disable_hyprland_logo = true;
