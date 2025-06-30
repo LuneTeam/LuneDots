@@ -3,6 +3,6 @@
   imports = [
     ./fonts.nix
     ./icons.nix
-    ./interface.nix
+    ./pavucontrol.nix
   ];
 }

@@ -1,14 +1,14 @@
 ![This image did not load](./.github/assets/screenshot/LuneDots.png)
 
 <div align="center">
-    <h1>Review</h1>
+    <h1>Screenshots</h1>
     <h4></h4>
 </div>
 
 ![This image did not load](./.github/assets/screenshot/pictures.png)
 
 <div align="center">
-    <h2>Overview</h2>
+    <h2>Description</h2>
     <h4></h4>
 </div>
 
@@ -50,7 +50,6 @@
    Copy the generated file to your host directory:
 
    ```bash
-   mkdir -p ./LuneDots/hosts/io
    cp ./etc/nixos/hardware-configuration.nix ./LuneDots/hosts/io/
    ```
 
@@ -58,7 +57,7 @@
    Install the system to `/mnt` using the flake:
 
    ```bash
-   nixos-install --root /mnt --flake ./LuneDots#io
+   nixos-install --root /mnt --flake ./LuneDots
    ```
 
    Set a root password with `passwd` or configure SSH keys if prompted.
@@ -82,10 +81,10 @@
   [github.com/hyprwm/hyprlock](https://github.com/hyprwm/hyprlock)
 - **Hyprcontrib**: grimblast - A Hyprland version of Grimshot.
   [github.com/hyprwm/contrib](https://github.com/hyprwm/contrib)
-- **Agsv2**: CLI for Astal+TypeScript frameworks.
-  [github.com/Aylur/ags/tree/v3](https://github.com/Aylur/ags/tree/v3)
-- **Ghostty**: Fast, modern terminal emulator.
-  [github.com/ghostty-org/ghostty](https://github.com/ghostty-org/ghostty)
+- **Quickshell**: Universal bar for C++ and Qt6.
+  [github.com/quickshell-mirror/quickshell](https://github.com/quickshell-mirror/quickshell)
+- **Foot**: Fast wayland terminal with xterm support.
+  [codeberg.org/dnkl/foot](https://codeberg.org/dnkl/foot)
 - **Zen-Browser**: Firefox fork for a nicer browsing experience.
   [github.com/zen-browser/desktop](https://github.com/zen-browser/desktop)
 - **Zed-editor**: Fast Rust-based IDE with cool features.
@@ -100,5 +99,5 @@
 * vaxry - For founding such a high-quality Wayland compositor
 * end-4 - For showing how beautiful Hyprland can be
 * fufexan - For providing excellent support for Nix in Hyprland
-* aylur - For creating AGS
 * mic92 - For showing how complex Nix configuration can be
+* outfoxxed - For creating quickshell

@@ -3,18 +3,17 @@
   enable = true;
   autoEnable = false;
 
-  image = ./wallpaper/anime/1.jpg;
+  image = ./wallpaper/other/3.jpg;
 
-  base16Scheme = "${self}/home-manager/home/stylix/oldworld.yaml";
+  base16Scheme = "${self}/home-manager/home/stylix/simple.yaml";
 
   targets = {
     hyprpaper.enable = true;
-    gtk.enable = false;
     qt.enable = false;
   };
 
   cursor = {
-    name = "Bibata-Modern-Ice";
+    name = "Bibata-Modern-Classic";
     package = pkgs.bibata-cursors;
     size = 22;
   };

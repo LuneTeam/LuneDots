@@ -15,6 +15,7 @@
       "$Mod, R, exec, rofi -show run"
       ", PRINT, exec, grimblast copy screen"
       "$Mod, K, exec, kitty"
+      "$Mod, N, exec, nautilus"
 
       "$Mod, 1, workspace, 1"
       "$Mod, 2, workspace, 2"

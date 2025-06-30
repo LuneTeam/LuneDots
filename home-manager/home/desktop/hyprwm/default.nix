@@ -8,7 +8,8 @@
   imports = [
     ./hyprcontrib
     ./hyprland
-    ./hyprlock
+    # ./hyprlock #TODOOO
+    ./hyprpicker
   ];
 
   wayland.windowManager.hyprland = {
@@ -20,4 +21,8 @@
     enable = true;
     package = inputs.hyprpaper.packages.${systems}.hyprpaper;
   };
+
+  home.packages = with pkgs; [
+    hyprland-qt-support
+  ];
 }

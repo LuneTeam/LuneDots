@@ -1,12 +1,27 @@
-{ pkgs, inputs, ... }: {
+{ pkgs, ... }:
+{
   programs.fish = {
     enable = true;
+    interactiveShellInit = ''
+      set fish_greeting # Disable greeting
+    '';
     plugins = with pkgs.fishPlugins; [
-      { name = "fzf-fish"; src = fzf-fish.src; }
-      { name = "forgit"; src = forgit.src; }
-      { name = "grc"; src = grc.src; }
-      { name = "pisces"; src = pisces.src; }
-      { name = "bass"; src = bass.src; }
+      {
+        name = "forgit";
+        src = forgit.src;
+      }
+      {
+        name = "grc";
+        src = grc.src;
+      }
+      {
+        name = "pisces";
+        src = pisces.src;
+      }
+      {
+        name = "bass";
+        src = bass.src;
+      }
     ];
   };
   home.packages = with pkgs; [

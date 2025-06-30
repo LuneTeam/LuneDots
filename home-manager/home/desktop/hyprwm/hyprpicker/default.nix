@@ -1,6 +1,10 @@
-{ pkgs, systems, ... }:
 {
-  home.packages = with pkgs; [
-    inputs.hyprwm.packages.${systems}.hyprpicker
+  pkgs,
+  inputs,
+  ...
+}:
+{
+  home.packages = [
+    inputs.hyprpicker.packages.${pkgs.system}.hyprpicker
   ];
 }

@@ -14,8 +14,6 @@
 
   inputs = {
     nixpkgs.url = "github:nixos/nixpkgs?ref=nixos-unstable";
-    nur.url = "github:nix-community/NUR";
-    nur.inputs.nixpkgs.follows = "nixpkgs";
     home-manager.url = "github:nix-community/home-manager";
     home-manager.inputs.nixpkgs.follows = "nixpkgs";
 
@@ -28,6 +26,9 @@
 
     hyprland-contrib.url = "github:hyprwm/contrib";
     hyprland-contrib.inputs.nixpkgs.follows = "nixpkgs";
+
+    hyprpicker.url = "github:hyprwm/hyprpicker";
+    hyprpicker.inputs.nixpkgs.follows = "hyprland/nixpkgs";
 
     hyprlock.url = "github:hyprwm/hyprlock";
     hyprlock.inputs.hyprgraphics.follows = "hyprland/hyprgraphics";
@@ -43,18 +44,23 @@
     hyprpaper.inputs.nixpkgs.follows = "hyprland/nixpkgs";
     hyprpaper.inputs.systems.follows = "hyprland/systems";
 
-    ags.url = "github:aylur/ags/v3";
+    quickshell.url = "github:quickshell-mirror/quickshell";
+    quickshell.inputs.nixpkgs.follows = "nixpkgs";
+
     zen-browser.url = "github:0xc000022070/zen-browser-flake";
     zen-browser.inputs.nixpkgs.follows = "nixpkgs";
 
     nixvim.url = "github:nix-community/nixvim";
     nixvim.inputs.nixpkgs.follows = "nixpkgs";
 
+    vermilion.url = "github:vaxerski/Vermilion";
+    vermilion.inputs.nixpkgs.follows = "nixpkgs";
+
     pre-commit-hooks.url = "github:cachix/git-hooks.nix";
     treefmt-nix.url = "github:numtide/treefmt-nix";
     nix-index-database.url = "github:nix-community/nix-index-database";
     nix-index-database.inputs.nixpkgs.follows = "nixpkgs";
-    stylix.url = "github:danth/stylix";
+    stylix.url = "github:nix-community/stylix";
     flake-parts.url = "github:hercules-ci/flake-parts";
   };
 }

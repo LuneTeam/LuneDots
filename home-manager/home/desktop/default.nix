@@ -1,9 +1,8 @@
 { ... }:
 {
   imports = [
-    ./ags
     ./hyprwm
+    ./quickshell
     ./rofi
-    ./zen
   ];
 }

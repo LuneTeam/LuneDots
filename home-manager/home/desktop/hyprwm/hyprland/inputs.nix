@@ -10,10 +10,8 @@
       };
     };
     cursor = {
-      no_hardware_cursors = 2;
-      no_break_fs_vrr = 2;
-      min_refresh_rate = 24;
-      enable_hyprcursor = true;
+      no_hardware_cursors = 0;
+      no_break_fs_vrr = 0;
       hide_on_touch = false;
     };
   };
