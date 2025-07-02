@@ -1,5 +1,6 @@
-{ ... }: {
-  programs.nixvim = { 
+{ ... }:
+{
+  programs.nixvim = {
     plugins.neotest.enable = true;
   };
 }
