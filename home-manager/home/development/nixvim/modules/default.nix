@@ -2,10 +2,23 @@
 {
  imports = [
   ./cmp
-  ./explorer
-  ./lsp
-  ./snip
-  ./icons
   ./colorscheme
+  ./comments
+  ./explorer
+  ./flash
+  ./format
+  ./icons
+  ./lazy
+  ./line
+  ./lint
+  ./lsp
+  ./notify
+  ./preview
+  ./snip
+  ./telescope
+  ./terminal
+  ./tests
+  ./treesitter
+  ./trouble
  ];
 }
