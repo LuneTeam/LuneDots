@@ -1,6 +1,6 @@
 { ... }:
 {
   imports = [
-    ./tokyonight.nix
+    ./oxocarbon.nix
   ];
 }
