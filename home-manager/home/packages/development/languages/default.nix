@@ -4,7 +4,6 @@
     ./ansible.nix
     ./argo.nix
     ./go.nix
-    ./k8s.nix
     ./nginx.nix
     ./nix.nix
     ./node.nix

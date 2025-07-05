@@ -1,10 +1,11 @@
 { pkgs, ... }:
 {
   home.packages = with pkgs; [
-    photoqt
+    loupe
     nautilus
     telegram-desktop
     showtime
     lact
+    papers
   ];
 }

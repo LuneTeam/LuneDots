@@ -3,6 +3,6 @@
   imports = [
     ./monitors.nix
     ./utilities.nix
-    ./viewers.nix
+    ./rclone.nix
   ];
 }
