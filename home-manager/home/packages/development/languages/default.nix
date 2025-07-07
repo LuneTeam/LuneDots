@@ -7,6 +7,7 @@
     ./nginx.nix
     ./nix.nix
     ./node.nix
+    ./package.nix
     ./podman.nix
     ./postgresql.nix
     ./qt.nix
