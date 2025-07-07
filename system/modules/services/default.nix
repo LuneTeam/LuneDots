@@ -1,10 +1,10 @@
-{ self, ... }:
+{ ... }:
 {
   programs.dconf.enable = true;
 
   services.mpd = {
     enable = true;
-    musicDirectory = "${self}../music";
+    musicDirectory = "/home/laimick/music";
     extraConfig = ''
       audio_output {
         type "pipewire"
