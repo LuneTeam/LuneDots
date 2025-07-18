@@ -5,6 +5,10 @@ on:
     - cron: "0 0 * * 1" # sec / hours / days / month / day of the week
   workflow_dispatch:
 
+permissions:
+  contents: write
+  pull-requests: write
+
 jobs:
   update-flake:
     runs-on: ubuntu-latest
