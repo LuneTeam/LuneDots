@@ -7,6 +7,7 @@
       "$Mod, mouse:272, movewindow"
       "$Mod, mouse:273, resizewindow"
     ];
+
     bind = [
       "$Mod, Q, killactive"
       "$Mod, T, togglefloating"

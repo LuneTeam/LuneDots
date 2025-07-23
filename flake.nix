@@ -53,14 +53,13 @@
     nixvim.url = "github:nix-community/nixvim";
     nixvim.inputs.nixpkgs.follows = "nixpkgs";
 
-    vermilion.url = "github:vaxerski/Vermilion";
-    vermilion.inputs.nixpkgs.follows = "nixpkgs";
-
     pre-commit-hooks.url = "github:cachix/git-hooks.nix";
-    treefmt-nix.url = "github:numtide/treefmt-nix";
+
     nix-index-database.url = "github:nix-community/nix-index-database";
     nix-index-database.inputs.nixpkgs.follows = "nixpkgs";
+
     stylix.url = "github:nix-community/stylix";
+
     flake-parts.url = "github:hercules-ci/flake-parts";
   };
 }

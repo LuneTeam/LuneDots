@@ -2,6 +2,11 @@
 {
   hardware.graphics = {
     enable = true;
+
+    extraPackages = with pkgs; [
+      vulkan-loader
+      vulkan-tools
+    ];
   };
 
   services.xserver.videoDrivers = [ "nvidia" ];
@@ -14,13 +19,10 @@
     nvidiaSettings = true;
     package = config.boot.kernelPackages.nvidiaPackages.beta;
   };
+
   environment.systemPackages = with pkgs; [
     nvidia-vaapi-driver
     libvdpau
     egl-wayland
-  ];
-  hardware.graphics.extraPackages = with pkgs; [
-    vulkan-loader
-    vulkan-tools
   ];
 }

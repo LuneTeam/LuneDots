@@ -9,6 +9,8 @@
     SDL_VIDEODRIVER = "wayland";
     XDG_CURRENT_DESKTOP = "Hyprland";
     XDG_SESSION_DESKTOP = "Hyprland";
+    XDG_SESSION_TYPE = "wayland";
+    NVD_BACKEND = "direct";
     __GL_GSYNC_ALLOWED = "1";
   };
 }

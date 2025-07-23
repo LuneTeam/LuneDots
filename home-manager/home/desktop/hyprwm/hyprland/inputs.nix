@@ -9,6 +9,7 @@
         enabled = false;
       };
     };
+
     cursor = {
       no_hardware_cursors = 0;
       no_break_fs_vrr = 0;

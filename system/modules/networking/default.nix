@@ -1,18 +1,22 @@
 { ... }:
 {
-  networking.hostName = "nixos";
+  networking = {
+    hostName = "nixos";
+    useDHCP = false;
+    dhcpcd.enable = false;
 
-  networking.networkmanager.enable = true;
+    firewall.enable = true;
 
-  networking.networkmanager.dns = "none";
+    nameservers = [
+      "1.1.1.1"
+      "1.0.0.1"
+      "8.8.8.8"
+      "8.8.4.4"
+    ];
 
-  networking.useDHCP = false;
-  networking.dhcpcd.enable = false;
-
-  networking.nameservers = [
-    "1.1.1.1"
-    "1.0.0.1"
-    "8.8.8.8"
-    "8.8.4.4"
-  ];
+    networkmanager = {
+      enable = true;
+      dns = "none";
+    };
+  };
 }

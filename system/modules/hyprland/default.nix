@@ -10,10 +10,10 @@
     enable = true;
     xdgOpenUsePortal = true;
     config = {
-      common.default = [ "gtk" ];
+      common.default = [ "hyprland" ];
       hyprland.default = [
-        "gtk"
         "hyprland"
+        "gtk"
       ];
     };
     extraPortals = [

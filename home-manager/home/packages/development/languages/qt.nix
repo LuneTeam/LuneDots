@@ -2,15 +2,21 @@
 {
   qt = {
     enable = true;
-    platformTheme.name = "qtct";
+    platformTheme.name = "qt6ct";
   };
 
   home.packages = with pkgs; [
     kdePackages.qtstyleplugin-kvantum
     kdePackages.qtdeclarative
-    kdePackages.full
     kdePackages.qt6ct
     kdePackages.qtwayland
-    kdePackages.kirigami
+    kdePackages.qtbase
+    kdePackages.qtimageformats
+    kdePackages.qtmultimedia
+    kdePackages.qtquicktimeline
+    kdePackages.qtsensors
+    kdePackages.qtsvg
+    kdePackages.qttools
+    kdePackages.syntax-highlighting
   ];
 }

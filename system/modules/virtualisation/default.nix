@@ -1,9 +1,8 @@
 { user, ... }:
 {
   virtualisation = {
-    containers = {
-      enable = true;
-    };
+    containers.enable = true;
+
     podman = {
       enable = true;
       dockerCompat = false;
