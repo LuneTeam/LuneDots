@@ -2,7 +2,7 @@
 {
   wayland.windowManager.hyprland.settings = {
     exec-once = [
-      # "qs &"
+      "uwsm finalize"
     ];
 
     monitor = "DP-1,2560x1440@170,0x0,1";

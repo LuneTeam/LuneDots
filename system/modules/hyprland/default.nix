@@ -2,6 +2,7 @@
 {
   programs.hyprland = {
     enable = true;
+    # withUWSM = true;
     portalPackage =
       inputs.hyprland.packages.${pkgs.stdenv.hostPlatform.system}.xdg-desktop-portal-hyprland;
   };
@@ -10,10 +11,10 @@
     enable = true;
     xdgOpenUsePortal = true;
     config = {
-      common.default = [ "hyprland" ];
+      common.default = [ "gtk" ];
       hyprland.default = [
-        "hyprland"
         "gtk"
+        "hyprland"
       ];
     };
     extraPortals = [

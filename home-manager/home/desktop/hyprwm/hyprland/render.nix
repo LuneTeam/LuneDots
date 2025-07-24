@@ -5,8 +5,8 @@
       enabled = false;
     };
 
-    render = {
-      new_render_scheduling = true;
-    };
+    # render = {
+    #   new_render_scheduling = true;
+    # };
   };
 }
