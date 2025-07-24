@@ -10,6 +10,4 @@
   ];
 
   stylix = import ./stylix.nix { inherit pkgs self; };
-
-  fonts.fontconfig.enable = true;
 }

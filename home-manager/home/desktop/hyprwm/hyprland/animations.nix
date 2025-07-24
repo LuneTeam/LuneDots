@@ -13,6 +13,7 @@
         "easeInOutCirc, 0.85, 0, 0.15, 1"
         "easeOutCirt, 0, 0.55, 0.45, 1"
       ];
+
       animation = [
         "windows, 1, 3, overshot, popin 60%"
         "windowsOut, 1, 6, default, popin 70%"

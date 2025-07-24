@@ -31,9 +31,6 @@
       noto-fonts-emoji
       twemoji-color-font
 
-      # CJK (Asian Language)
-      noto-fonts-cjk-sans
-
       # Icon Fonts
       material-symbols
     ];

@@ -87,8 +87,6 @@
   [codeberg.org/dnkl/foot](https://codeberg.org/dnkl/foot)
 - **Zen-Browser**: Firefox fork for a nicer browsing experience.
   [github.com/zen-browser/desktop](https://github.com/zen-browser/desktop)
-- **Zed-editor**: Fast Rust-based IDE with cool features.
-[github.com/zed-industries/zed](https://github.com/zed-industries/zed)
 
   </details>
 <div align="center">

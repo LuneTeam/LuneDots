@@ -12,9 +12,8 @@
     ./nvidia
     ./pipewire
     ./programs
-    ./services
     ./swap
-    ./timeZone
+    ./time
     ./users
     ./virtualisation
   ];

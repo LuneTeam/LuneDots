@@ -3,9 +3,9 @@
   enable = true;
   autoEnable = false;
 
-  image = ./wallpaper/other/3.jpg;
+  image = ./wallpaper/anime/6.png;
 
-  base16Scheme = "${self}/home-manager/home/stylix/simple.yaml";
+  base16Scheme = "${self}/home-manager/home/stylix/wave.yaml";
 
   targets = {
     hyprpaper.enable = true;
